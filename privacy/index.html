@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watchism Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #09101c;
+      --panel: rgba(18, 28, 45, 0.9);
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #f4f7fb;
+      --muted: rgba(244, 247, 251, 0.74);
+      --accent: #d9bb73;
+      --link: #86d2f4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(120, 196, 234, 0.16), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(217, 187, 115, 0.12), transparent 28%),
+        linear-gradient(180deg, #111d2f 0%, #070d17 100%);
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 72px;
+    }
+
+    article {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--panel);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .nav {
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .nav a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin: 30px 0 12px;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.68;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    a { color: var(--link); }
+
+    .meta {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .note {
+      margin-top: 20px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <div class="nav"><a href="../">Watchism Documents</a></div>
+
+      <h1>Watchism Privacy Policy</h1>
+      <div class="meta">Effective date: March 21, 2026</div>
+
+      <p>
+        This Privacy Policy explains how Watchism handles information when you use the app.
+        Watchism is designed as a privacy-first iPhone app. The app does not require an account,
+        does not include advertising SDKs, and does not use analytics or hidden telemetry.
+      </p>
+
+      <p>
+        If you publish this app under your own name or entity, replace the publisher and contact
+        placeholders in this document before making it public.
+      </p>
+
+      <h2>1. Publisher</h2>
+      <p>
+        Watchism is published by <strong>Aldo Gonzalez - Total Tech Consulting, Inc.</strong>.
+      </p>
+
+      <h2>2. What Watchism Stores</h2>
+      <p>
+        Watchism stores watch-related information locally on your device so the app can function.
+        Depending on how you use the app, this may include:
+      </p>
+      <ul>
+        <li>watch names, brands, model information, notes, and collection status</li>
+        <li>wear logs, timing observations, rate history, and related measurement details</li>
+        <li>watch photographs and thumbnails saved into the app, or references to photos you choose to link from Apple Photos</li>
+        <li>wishlist information, acquisition priority, saved brand favorites, boutique notes, and directory preferences</li>
+        <li>saved world-time zones, dashboard layout preferences, and other app settings</li>
+      </ul>
+
+      <h2>3. Permissions and Optional Data Access</h2>
+      <p>
+        Watchism only accesses protected device data when you explicitly choose a feature that needs it.
+      </p>
+      <ul>
+        <li><strong>Camera:</strong> used only if you choose to take a watch photo in the app.</li>
+        <li><strong>Photos:</strong> used only if you choose to import or link a photo from your photo library.</li>
+        <li><strong>Contacts:</strong> used only if you choose to link a boutique advisor from your contacts.</li>
+        <li><strong>Location:</strong> used only if you activate astronomy location so Watchism can calculate sunrise, sunset, twilight, moon, and related context.</li>
+      </ul>
+
+      <h2>4. How Watchism Uses Information</h2>
+      <p>
+        Information accessed or stored by Watchism is used only to provide app features you request, such as:
+      </p>
+      <ul>
+        <li>organizing and displaying your watch collection and wishlist</li>
+        <li>attaching and cropping watch photos</li>
+        <li>recording wear logs and timing observations</li>
+        <li>calculating watch-related summaries, rate views, and wear rotation views</li>
+        <li>storing your preferred app layout, time zones, and source settings</li>
+        <li>calculating astronomy context when location is enabled</li>
+      </ul>
+
+      <h2>5. Network Activity</h2>
+      <p>
+        Watchism does not send your collection data to a Watchism server because Watchism does not
+        operate a cloud account system for user collection storage.
+      </p>
+      <p>
+        Network access in Watchism is limited to the following categories:
+      </p>
+      <ul>
+        <li><strong>Reference time synchronization:</strong> the app can contact configured time-reference endpoints such as NTP, optional NTS, optional Roughtime, and optional HTTPS Date sources.</li>
+        <li><strong>User-initiated browsing:</strong> if you open a watch website or brand page from the in-app directory, the embedded browser loads that page at your request.</li>
+        <li><strong>User-initiated image import:</strong> if you choose to import a selected browser image, Watchism downloads that image so it can be attached locally to a watch or wishlist entry.</li>
+      </ul>
+
+      <p>
+        Watchism does <strong>not</strong> use analytics, advertising, fingerprinting, or hidden reporting.
+      </p>
+
+      <h2>6. Data Sharing</h2>
+      <p>
+        Watchism does not sell your personal information and does not share your watch collection
+        data with third-party advertisers or analytics providers.
+      </p>
+      <p>
+        Some information may be processed by Apple system frameworks or by websites you explicitly
+        choose to visit from the in-app browser. For example:
+      </p>
+      <ul>
+        <li>Apple Photos and Camera frameworks process images you choose to capture, import, or link.</li>
+        <li>Apple Contacts processes the contact you choose to link.</li>
+        <li>Apple Location Services provides location data if you enable astronomy location.</li>
+        <li>External websites you open in the in-app browser receive your connection in the same way they would if you visited them in a normal web browser.</li>
+      </ul>
+
+      <h2>7. On-Device Storage and Retention</h2>
+      <p>
+        Watchism is designed to keep your watch data on your device. Collection data, app-managed
+        images, measurements, notes, and settings remain on-device unless you explicitly export them
+        or interact with an external website.
+      </p>
+      <p>
+        If you link a photo from Apple Photos instead of importing it into Watchism, the original
+        image remains in your photo library and Watchism stores only the information needed to refer
+        to that selected asset.
+      </p>
+      <p>
+        Data stays available until you delete it in the app, remove the app, or erase the device.
+      </p>
+
+      <h2>8. Your Choices</h2>
+      <p>
+        You can choose whether to grant Camera, Photos, Contacts, or Location access. You can also
+        disable optional time-reference sources inside the app and stop using in-app browsing
+        features at any time.
+      </p>
+
+      <h2>9. Children’s Privacy</h2>
+      <p>
+        Watchism is not directed to children and does not knowingly collect personal information from children through an account system or remote profile.
+      </p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>
+        If this Privacy Policy changes, the updated version will be posted at the public privacy-policy URL associated with Watchism.
+      </p>
+
+      <h2>11. Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy, contact:
+        <a href="mailto:watchism@totalaldo.com">watchism@totalaldo.com</a>
+      </p>
+
+      <div class="note">
+        Suggested App Store Connect privacy-policy URL after enabling GitHub Pages on this repository:
+        <br>
+        <code>https://&lt;github-username&gt;.github.io/Watchism/privacy/</code>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watchism Documents</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #09101c;
+      --panel: rgba(18, 28, 45, 0.88);
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #f4f7fb;
+      --muted: rgba(244, 247, 251, 0.74);
+      --accent: #d9bb73;
+      --accent-2: #78c4ea;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(120, 196, 234, 0.16), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(217, 187, 115, 0.12), transparent 28%),
+        linear-gradient(180deg, #111d2f 0%, #070d17 100%);
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    .panel {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--panel);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.05;
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .links {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    a.card {
+      display: block;
+      padding: 18px 20px;
+      border-radius: 20px;
+      border: 1px solid rgba(120, 196, 234, 0.16);
+      background: linear-gradient(135deg, rgba(41, 64, 92, 0.82), rgba(19, 30, 48, 0.9));
+      color: var(--text);
+      text-decoration: none;
+      transition: transform 140ms ease, border-color 140ms ease;
+    }
+
+    a.card:hover {
+      transform: translateY(-1px);
+      border-color: rgba(217, 187, 115, 0.32);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--accent-2);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .card-title {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1.08rem;
+      font-weight: 600;
+    }
+
+    .card-copy {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <span class="eyebrow">Watchism</span>
+      <h1>Public Documents</h1>
+      <p>
+        These pages are intended for App Store submission and customer support. If you are
+        publishing this repository through GitHub Pages, use the links below as the public
+        privacy-policy and support destinations for the app.
+      </p>
+
+      <div class="links">
+        <a class="card" href="./privacy/">
+          <span class="card-title">Privacy Policy</span>
+          <span class="card-copy">How Watchism handles watch data, photos, permissions, and network activity.</span>
+        </a>
+
+        <a class="card" href="./support/">
+          <span class="card-title">Support</span>
+          <span class="card-copy">Support contact details, troubleshooting guidance, and app help information.</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

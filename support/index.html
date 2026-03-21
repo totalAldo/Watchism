@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watchism Support</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #09101c;
+      --panel: rgba(18, 28, 45, 0.9);
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #f4f7fb;
+      --muted: rgba(244, 247, 251, 0.74);
+      --accent: #d9bb73;
+      --link: #86d2f4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(120, 196, 234, 0.16), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(217, 187, 115, 0.12), transparent 28%),
+        linear-gradient(180deg, #111d2f 0%, #070d17 100%);
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 72px;
+    }
+
+    article {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--panel);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .nav {
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .nav a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin: 30px 0 12px;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.68;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    a { color: var(--link); }
+
+    .meta {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .panel {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <div class="nav"><a href="../">Watchism Documents</a></div>
+
+      <h1>Watchism Support</h1>
+      <div class="meta">Support page for the Watchism iPhone app.</div>
+
+      <p>
+        Watchism is an iPhone-only app for disciplined reference time and private watch collection management.
+        No account is required to use the app.
+      </p>
+
+      <h2>1. Contact Support</h2>
+      <p>
+        For support, feature questions, or App Store review follow-up, contact:
+        <a href="mailto:[REPLACE_WITH_SUPPORT_EMAIL]">[REPLACE_WITH_SUPPORT_EMAIL]</a>
+      </p>
+
+      <p>
+        If you publish an issue tracker or public repository, you can also add it here:
+        <br>
+        <a href="[REPLACE_WITH_REPOSITORY_OR_SUPPORT_URL]">[REPLACE_WITH_REPOSITORY_OR_SUPPORT_URL]</a>
+      </p>
+
+      <h2>2. What Watchism Does</h2>
+      <ul>
+        <li>shows a disciplined local reference clock using configurable time-reference sources</li>
+        <li>stores watch collection records, notes, photos, wear logs, and timing observations on-device</li>
+        <li>supports wishlist management, browser-assisted watch discovery, and image import workflows</li>
+      </ul>
+
+      <h2>3. Common Troubleshooting</h2>
+      <ul>
+        <li><strong>Camera not available:</strong> confirm that Camera access is allowed for Watchism in iPhone Settings.</li>
+        <li><strong>Photos not importing:</strong> confirm that Photo Library access is allowed and that the selected item is still available in Photos.</li>
+        <li><strong>Astronomy data missing:</strong> enable location inside Watchism if you want local sunrise, sunset, twilight, and moon context.</li>
+        <li><strong>Reference source changes:</strong> verify your enabled time sources in the Sources sheet. NTP remains available as the baseline source.</li>
+        <li><strong>Browser image import:</strong> long-press an image in the in-app browser, then choose whether to add it to the wishlist or attach it to an existing watch.</li>
+      </ul>
+
+      <h2>4. Permissions Used by the App</h2>
+      <ul>
+        <li><strong>Camera:</strong> only when you choose to take a watch photo.</li>
+        <li><strong>Photos:</strong> only when you choose to import or link a photo.</li>
+        <li><strong>Contacts:</strong> only when you choose to link a boutique advisor.</li>
+        <li><strong>Location:</strong> only when you enable astronomy location features.</li>
+      </ul>
+
+      <h2>5. Privacy</h2>
+      <p>
+        Watchism is designed to keep watch data on-device. For privacy details, see the
+        <a href="../privacy/">Watchism Privacy Policy</a>.
+      </p>
+
+      <h2>6. App Review Information</h2>
+      <p>
+        If Apple App Review needs to verify app behavior, the following points are relevant:
+      </p>
+      <ul>
+        <li>no login or account is required</li>
+        <li>collection data and watch images are stored locally on-device unless you explicitly export them</li>
+        <li>network access is limited to configured time-reference endpoints and explicit user actions such as opening sites or importing a selected browser image</li>
+      </ul>
+
+      <div class="panel">
+        Suggested App Store Connect support URL after enabling GitHub Pages on this repository:
+        <br>
+        <code>https://&lt;github-username&gt;.github.io/Watchism/support/</code>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
