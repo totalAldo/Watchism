@@ -125,7 +125,7 @@
 
       <h2>2. What Watchism Does</h2>
       <ul>
-        <li>shows a disciplined local reference clock using configurable time-reference sources</li>
+        <li>shows a disciplined local reference clock using a selectable primary source of NTP, HTTPS Date, or Roughtime, followed by enabled fallback sources</li>
         <li>stores watch collection records, notes, photos, wear logs, and timing observations on-device</li>
         <li>supports wishlist management, browser-assisted watch discovery, and image import workflows</li>
       </ul>
@@ -135,7 +135,7 @@
         <li><strong>Camera not available:</strong> confirm that Camera access is allowed for Watchism in iPhone Settings.</li>
         <li><strong>Photos not importing:</strong> confirm that Photo Library access is allowed and that the selected item is still available in Photos.</li>
         <li><strong>Astronomy data missing:</strong> enable location inside Watchism if you want local sunrise, sunset, twilight, and moon context.</li>
-        <li><strong>Reference source changes:</strong> verify your enabled time sources in the Sources sheet. NTP remains available as the baseline source.</li>
+        <li><strong>Reference source changes:</strong> verify your selected primary source and enabled fallback methods in the Sources sheet. Watchism tries the chosen primary source first and then the remaining enabled sources in the displayed order.</li>
         <li><strong>Browser image import:</strong> long-press an image in the in-app browser, then choose whether to add it to the wishlist or attach it to an existing watch.</li>
       </ul>
 
@@ -160,7 +160,7 @@
       <ul>
         <li>no login or account is required</li>
         <li>collection data and watch images are stored locally on-device unless you explicitly export them</li>
-        <li>network access is limited to configured time-reference endpoints and explicit user actions such as opening sites or importing a selected browser image</li>
+        <li>network access is limited to configured time-reference endpoints for the selected primary source and any enabled fallback sources such as NTP, HTTPS Date, or Roughtime, plus explicit user actions such as opening sites or importing a selected browser image</li>
       </ul>
     </article>
   </main>
