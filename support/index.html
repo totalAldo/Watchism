@@ -133,25 +133,29 @@
       <h2>2. What Watchism Does</h2>
       <ul>
         <li>shows a disciplined local reference clock using a selectable primary source of NTP, HTTPS Date, or Roughtime, followed by enabled fallback sources</li>
-        <li>stores watch collection records, notes, photos, wear logs, and timing observations on-device</li>
+        <li>stores watch collection records, notes, photos, pricing, valuations, boutique and dealer records, wear logs, Watch Box sort and arrangement preferences, wear-log sort preferences, and timing observations on-device</li>
+        <li>lets you keep a manual Watch Box arrangement or sort the grid by attributes without changing other watch lists</li>
+        <li>lets you manage each watch's saved wear-log history with recency or duration sorting, backdated records, edits, and deletes</li>
         <li>supports wishlist management, browser-assisted watch discovery, and image import workflows</li>
       </ul>
 
       <h2>3. Common Troubleshooting</h2>
       <ul>
         <li><strong>Camera not available:</strong> confirm that Camera access is allowed for Watchism in iPhone Settings.</li>
-        <li><strong>Photos not importing:</strong> confirm that Photo Library access is allowed and that the selected item is still available in Photos.</li>
-        <li><strong>Astronomy data missing:</strong> enable location inside Watchism if you want local sunrise, sunset, twilight, and moon context.</li>
+        <li><strong>Photos not importing:</strong> confirm that Photo Library access is allowed and that the selected item is still available in Photos. If the item is stored only in iCloud Photos, approve the Watchism consent prompt and make sure the device can download it.</li>
+        <li><strong>Astronomy data missing:</strong> moon phase works without location. Enable astronomy location inside Watchism if you want local sunrise, sunset, twilight, solar noon, and daylight context.</li>
+        <li><strong>Watch Box order:</strong> open the Sort menu in the Watch Box to choose Manual, Brand & Name, Newest Added, Oldest Added, Last Worn, Most Worn, or Least Worn. Choose Manual to show the Reorder button for custom grid arrangement. The saved manual arrangement is shared across Watch Box filters, and each filter shows the matching watches in that sequence.</li>
+        <li><strong>Wear logs are not in the order you expect:</strong> open the Sort menu on the Wear Log card or Manage Wear Logs sheet to switch between last worn first, oldest first, longest worn, and least worn.</li>
         <li><strong>Reference source changes:</strong> verify your selected primary source and enabled fallback methods in the Sources sheet. Watchism tries the chosen primary source first and then the remaining enabled sources in the displayed order.</li>
-        <li><strong>Browser image import:</strong> long-press an image in the in-app browser, then choose whether to add it to the wishlist or attach it to an existing watch.</li>
+        <li><strong>Browser image import:</strong> long-press an image in the in-app browser, then choose whether to add it to the wishlist or attach it to an existing watch. The embedded browser uses non-persistent website data, and image downloads do not forward browser cookies.</li>
       </ul>
 
       <h2>4. Permissions Used by the App</h2>
       <ul>
         <li><strong>Camera:</strong> only when you choose to take a watch photo.</li>
-        <li><strong>Photos:</strong> only when you choose to import or link a photo.</li>
+        <li><strong>Photos:</strong> only when you choose to import or link a photo. Watchism shows consent copy before opening Photos because selected iCloud Photos assets may be downloaded by iOS for import, preview caching, review, crop, or analysis.</li>
         <li><strong>Contacts:</strong> only when you choose to link a boutique advisor.</li>
-        <li><strong>Location:</strong> only when you enable astronomy location features.</li>
+        <li><strong>Location:</strong> only when you enable astronomy location for solar events; moon phase remains available without location.</li>
       </ul>
 
       <h2>5. Privacy</h2>
@@ -167,7 +171,7 @@
       <ul>
         <li>no login or account is required</li>
         <li>collection data and watch images are stored locally on-device unless you explicitly export them</li>
-        <li>network access is limited to configured time-reference endpoints for the selected primary source and any enabled fallback sources such as NTP, HTTPS Date, or Roughtime, plus explicit user actions such as opening sites or importing a selected browser image</li>
+        <li>network access is limited to configured time-reference endpoints for the selected primary source and any enabled fallback sources such as NTP, HTTPS Date, or Roughtime, plus explicit user actions such as opening sites in Watchism's non-persistent embedded browser or the system browser, importing a selected browser image without browser cookies, or approving selected iCloud Photos asset downloads</li>
       </ul>
     </article>
   </main>

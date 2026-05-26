@@ -99,7 +99,7 @@
       <div class="nav"><a href="../">Watchism Documents</a></div>
 
       <h1>Watchism Privacy Policy</h1>
-      <div class="meta">Effective date: March 21, 2026</div>
+      <div class="meta">Effective date: May 26, 2026</div>
 
       <p>
         This Privacy Policy explains how Watchism handles information when you use the app.
@@ -126,8 +126,8 @@
         <li>watch names, brands, model information, notes, and collection status</li>
         <li>wear logs, timing observations, rate history, and related measurement details</li>
         <li>watch photographs and thumbnails saved into the app, or references to photos you choose to link from Apple Photos</li>
-        <li>wishlist information, acquisition priority, saved brand favorites, boutique notes, and directory preferences</li>
-        <li>saved world-time zones, dashboard layout preferences, and other app settings</li>
+        <li>pricing, valuation history, wishlist information, acquisition priority, saved brand favorites, boutique notes, authorized dealer records, and directory preferences</li>
+        <li>saved world-time zones, dashboard layout preferences, Watch Box sort and arrangement preferences, wear-log sort preferences, and other app settings</li>
       </ul>
 
       <h2>3. Permissions and Optional Data Access</h2>
@@ -136,9 +136,9 @@
       </p>
       <ul>
         <li><strong>Camera:</strong> used only if you choose to take a watch photo in the app.</li>
-        <li><strong>Photos:</strong> used only if you choose to import or link a photo from your photo library.</li>
+        <li><strong>Photos:</strong> used only if you choose to import or link a photo from your photo library. Before the Photos picker opens, Watchism explains that selected iCloud Photos assets may be downloaded by iOS for the action you approve.</li>
         <li><strong>Contacts:</strong> used only if you choose to link a boutique advisor from your contacts.</li>
-        <li><strong>Location:</strong> used only if you activate astronomy location so Watchism can calculate sunrise, sunset, twilight, moon, and related context.</li>
+        <li><strong>Location:</strong> used only if you activate astronomy location so Watchism can calculate sunrise, sunset, twilight, solar noon, and daylight context. Moon phase remains available without location.</li>
       </ul>
 
       <h2>4. How Watchism Uses Information</h2>
@@ -148,10 +148,10 @@
       <ul>
         <li>organizing and displaying your watch collection and wishlist</li>
         <li>attaching and cropping watch photos</li>
-        <li>recording wear logs and timing observations</li>
+        <li>recording and sorting wear logs and timing observations</li>
         <li>calculating watch-related summaries, rate views, and wear rotation views</li>
-        <li>storing your preferred app layout, time zones, and source settings</li>
-        <li>calculating astronomy context when location is enabled</li>
+        <li>storing your preferred app layout, Watch Box sort and arrangement, time zones, and source settings</li>
+        <li>calculating moon phase locally and solar astronomy context when location is enabled</li>
       </ul>
 
       <h2>5. Network Activity</h2>
@@ -164,8 +164,9 @@
       </p>
       <ul>
         <li><strong>Reference time synchronization:</strong> the app can contact configured time-reference endpoints such as NTP, HTTPS Date, and Roughtime. You can choose which source is primary, and Watchism then consults the remaining enabled sources in the displayed fallback order.</li>
-        <li><strong>User-initiated browsing:</strong> if you open a watch website or brand page from the in-app directory, the embedded browser loads that page at your request.</li>
-        <li><strong>User-initiated image import:</strong> if you choose to import a selected browser image, Watchism downloads that image so it can be attached locally to a watch or wishlist entry.</li>
+        <li><strong>User-initiated browsing:</strong> if you open a watch website, brand page, dealer website, or boutique-related link, Watchism loads the destination at your request in its non-persistent embedded browser or through the system browser, depending on the action.</li>
+        <li><strong>User-initiated image import:</strong> if you choose to import a selected browser image, Watchism downloads that image so it can be attached locally to a watch or wishlist entry. That selected-image request may include the page referrer and browser user agent, but Watchism does not forward browser cookies to the image download.</li>
+        <li><strong>User-approved Photos downloads:</strong> if you choose to import or link Photos-library images, selected iCloud Photos assets may be downloaded by iOS so Watchism can import a copy, cache a linked preview, or later load the original for review, crop, or analysis.</li>
       </ul>
 
       <p>
@@ -179,13 +180,13 @@
       </p>
       <p>
         Some information may be processed by Apple system frameworks or by websites you explicitly
-        choose to visit from the in-app browser. For example:
+        choose to visit from Watchism's embedded browser or the system browser. For example:
       </p>
       <ul>
-        <li>Apple Photos and Camera frameworks process images you choose to capture, import, or link.</li>
+        <li>Apple Photos and Camera frameworks process images you choose to capture, import, or link. If a selected Photos item exists only in iCloud Photos, iOS may download it after you approve the Photos action in Watchism.</li>
         <li>Apple Contacts processes the contact you choose to link.</li>
         <li>Apple Location Services provides location data if you enable astronomy location.</li>
-        <li>External websites you open in the in-app browser receive your connection in the same way they would if you visited them in a normal web browser.</li>
+        <li>External websites you open from Watchism receive your connection in the same way they would if you visited them in a normal web browser, but Watchism's embedded browser uses non-persistent website data.</li>
       </ul>
 
       <h2>7. On-Device Storage and Retention</h2>
@@ -197,7 +198,8 @@
       <p>
         If you link a photo from Apple Photos instead of importing it into Watchism, the original
         image remains in your photo library and Watchism stores only the information needed to refer
-        to that selected asset.
+        to that selected asset, plus a lightweight local preview cache. Linked originals can be loaded
+        later for review, crop, or analysis after the Photos download consent shown during linking.
       </p>
       <p>
         Data stays available until you delete it in the app, remove the app, or erase the device.
@@ -206,8 +208,8 @@
       <h2>8. Your Choices</h2>
       <p>
         You can choose whether to grant Camera, Photos, Contacts, or Location access. You can also
-        choose the primary reference source, enable or disable HTTPS Date and Roughtime as additional sources inside the app, and stop using
-        in-app browsing features at any time.
+        choose the primary reference source, enable or disable HTTPS Date and Roughtime as additional sources inside the app, keep astronomy location inactive while still seeing moon phase, and stop using
+        browsing features at any time.
       </p>
 
       <h2>9. Children’s Privacy</h2>
